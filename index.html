@@ -35,6 +35,85 @@
       .author-info a {
         text-decoration: none;
       }
+      /* ---My CSS starts here-- */
+
+      :root {
+        --fs-sm: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+        --fs-base: clamp(1rem, 0.9rem + 0.4vw, 1.25rem);
+        --fs-md: clamp(1.125rem, 1.1rem + 0.6vw, 1.5rem);
+        --fs-lg: clamp(1.25rem, 1rem + 1vw, 2rem);
+        --fs-xl: clamp(1.5rem, 1.4rem + 1.5vw, 2.5rem);
+        --fs-2xl: clamp(2rem, 1.75rem + 2vw, 3rem);
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f2f2f2;
+        line-height: 160%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      h2 {
+        font-size: var(--fs-md);
+      }
+
+      p {
+        font-size: var(--fs-base);
+        color: #3333338e;
+      }
+
+      .card {
+        width: 90%;
+        margin: 4rem auto 0;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .img-div {
+        padding: 1rem;
+      }
+
+      .img-div img {
+        border-radius: 8px;
+      }
+
+      .text-div {
+        padding: 0 1rem 1rem;
+      }
+
+      span {
+        font-size: var(--fs-sm);
+        color: #800080;
+        font-weight: 700;
+        text-align: center;
+        padding: 0.1em 1em;
+        border-radius: 20px;
+        background-color: #f1daf163;
+      }
+
+      .title {
+        margin-top: 1rem;
+      }
+
+      .card-description {
+        margin-bottom: 1.5rem;
+        margin: 1rem 0;
+      }
+
+      .card-author {
+        border-top: 1px solid #2222221f;
+        padding: 1.5rem 1rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        .card {
+          max-width: 450px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -45,6 +124,21 @@
   From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.
 
   Annie Spratt -->
+
+    <div class="card">
+      <div class="img-div">
+        <img src="./resources/Cactus.jpg" alt="Cactus" />
+      </div>
+      <div class="text-div">
+        <span>Design</span>
+        <h2 class="title">Embracing Minimalism</h2>
+        <p class="card-description">
+          From minimalist sculptures to minimalist paintings, this blog will
+          inspire you to appreciate the beauty that lies in simplicity.
+        </p>
+      </div>
+      <p class="card-author">Annie Spratt</p>
+    </div>
 
     <div class="author-info">
       Coded by <a href="#">Kennedy Senyo Dordoe</a> | Challenge by
